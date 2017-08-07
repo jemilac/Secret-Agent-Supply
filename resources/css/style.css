@@ -146,7 +146,6 @@ footer {
   text-align: left;
   height: 5rem;
 }
-/*why can't the footer text align left?*/
 
 /*media query for tablet*/
 @media only screen and (max-width: 1024px) {
@@ -180,7 +179,6 @@ footer {
     max-width: 470px;
     padding: 1rem 2rem;
     top: 10rem;
-    /*why the text-box can't fit inside? i.e. same width as the cover-banner?*/
   }
 
   h3 {
@@ -222,7 +220,6 @@ footer {
     width: 90%;
     margin-top: 3rem;
   }
-/*how to make the biz-info box longer?*/
 
   .info p {
     padding-bottom: 0.5rem;
