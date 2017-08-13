@@ -9,8 +9,12 @@ header {
 }
 
 .site-container {
+  display: flex; /*flex box elements newly added*/
+  flex-grow: 1;
+  flex-direction: column;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 0 auto; /*keep the container in the middle of the page*/
+
 }
 
 /*header logo section*/
@@ -44,7 +48,7 @@ header {
   flex-direction: column;
   background-color: black;
   color: white;
-  width: 20rem;
+  max-width: 20rem;
   padding: 2rem 3rem;
   position: relative;
   top: 9rem;
@@ -62,6 +66,7 @@ h2 {
 }
 
 /*products bar*/
+
 nav {
   background-color: firebrick;
   color: white;
@@ -106,6 +111,7 @@ nav ul {
   height: auto;
   margin: 4rem auto;
 }
+
 .product span {
   background-color: black;
   color: white;
@@ -176,17 +182,19 @@ footer {
   }
 
   .text-box {
-    max-width: 470px;
+    max-width: 100%; /*box no longer overflows*/
     padding: 1rem 2rem;
     top: 10rem;
   }
 
   h3 {
     font-size: 0.77rem;
+    margin: 0rem;
   }
 
   h2 {
     font-size: 1rem;
+    margin: 0rem;
   }
 
   nav ul {
@@ -198,12 +206,13 @@ footer {
     text-align: center;
   }
 
-  .product {
+  .products, .product {
     width: 90%;
+    margin: 2rem auto;
   }
 
   #pen {
-      margin: 0 auto;
+    margin: 0 auto;
   }
 
   #glasses {
@@ -218,11 +227,12 @@ footer {
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin-top: 3rem;
+    margin: 0rem auto 2rem auto;
   }
 
-  .info p {
-    padding-bottom: 0.5rem;
+  .info {
+    width: 90%; /*added width so content won't be squeezed*/
+    margin-bottom: 0.5rem;
   }
 
   footer {
